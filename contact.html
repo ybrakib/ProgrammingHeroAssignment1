@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<bod class="bg-yellow-50 flex flex-col pb-12">
+  <header class="flex flex-col pb-12">
+    <!-- Space before header -->
+    <div class="bg-[#CBCDA9] self-stretch flex min-h-[53px] w-full flex-col max-md:max-w-full"></div>
+    <!-- Non functional simple navbar -->
+    <nav class="items-stretch self-center flex w-[304px] max-w-full justify-between gap-5 mt-9 px-5">
+      <a href="/index.html" class="text-black text-lg font-medium hover:text-blue-500">Home</a>
+      <a href="/about.html" class="text-black text-lg font-medium hover:text-blue-500">About us</a>
+      <a href="/contact.html" class="text-black text-lg font-semibold hover:text-blue-500">Contact</a>
+    </nav>
+  </header>
+  <section class="flex flex-col pb-12">
+    <div class="text-black text-8xl font-bold self-center mt-20 max-md:max-w-full max-md:text-4xl max-md:mt-10">
+      Contact Us
+    </div>
+    <div class="text-black text-center text-2xl font-semibold self-center max-w-[663px] max-md:max-w-full">
+      Get in touch! Have a question or feedback? Use our contact form or drop us
+      an email. We're here to help!
+      <br />
+    </div>
+    <div class="bg-stone-900 self-center w-[866px] max-w-full mt-20 mb-32 pl-9 rounded-lg max-md:my-10 max-md:pl-5">
+      <div class="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
+        <div class="flex flex-col items-stretch w-[46%] max-md:w-full max-md:ml-0">
+          <form class="flex flex-col my-auto max-md:mt-10">
+            <h1 class="text-white text-3xl tracking-wider self-stretch">Get in touch with us</h1>
+
+            <label class="text-stone-300 text-xs font-light tracking-wide self-stretch mt-7" for="name">Name</label>
+            <input type="text" id="name" name="name"
+              class="text-neutral-400 text-xs font-light leading-4 tracking-normal whitespace-nowrap bg-zinc-800 self-stretch justify-center mt-2 pl-3 pr-16 py-4 rounded-sm border-[0.368px] border-solid border-neutral-400 items-start max-md:pr-5"
+              placeholder="Rachel Joe" />
+
+            <label class="text-stone-300 text-xs font-light tracking-wide self-stretch mt-6" for="email">Email</label>
+            <input type="email" id="email" name="email"
+              class="text-neutral-400 text-xs font-light leading-5 tracking-normal whitespace-nowrap bg-zinc-800 self-stretch justify-center mt-2 pl-3 pr-16 py-3 rounded-sm border-[0.368px] border-solid border-neutral-400 items-start max-md:pr-5"
+              placeholder="Rachel@domain.com" />
+
+            <label class="text-stone-300 text-xs font-light tracking-wide self-stretch mt-6"
+              for="message">Message</label>
+            <textarea id="message" name="message"
+              class="text-neutral-400 text-xs font-light leading-5 tracking-normal whitespace-nowrap bg-zinc-800 self-stretch mt-1.5 pl-3 pr-16 pt-2 pb-11 rounded-sm border-[0.368px] border-solid border-neutral-400 items-start max-md:pr-5"
+              placeholder="Type your query here....."></textarea>
+
+            <button type="submit"
+              class="text-stone-900 text-sm tracking-wide whitespace-nowrap justify-center items-stretch bg-yellow-300 mt-5 px-6 py-2.5 rounded-sm self-start max-md:px-5 hover:text-blue-500 hover:bg-gray-200">Send
+              my message</button>
+          </form>
+
+        </div>
+        <div class="flex flex-col items-stretch w-[54%] ml-5 max-md:w-full max-md:ml-0">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65569.2817063834!2d-122.458799713749!3d37.62446276484285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7981800c0a5f%3A0xcd081efca8c922c!2sCalifornia%20Golf%20Club%20of%20San%20Francisco!5e0!3m2!1sen!2sbd!4v1705143841307!5m2!1sen!2sbd"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="aspect-[0.77] object-contain object-center w-full overflow-hidden grow max-md:max-w-full max-md:mt-8">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-[#CBCDA9] text-black text-center py-5">
+    <div class="container mx-auto">
+      <p class="text-sm">&copy; 2024 @ybrakib. All rights reserved.</p>
+    </div>
+  </footer>
+  </body>
+
+</html>
